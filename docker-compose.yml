@@ -13,3 +13,6 @@ services:
   countryconfig:
     # image: ${DOCKERHUB_ACCOUNT}/${DOCKERHUB_REPO}:${COUNTRY_CONFIG_VERSION}
     build: .
+    restart: unless-stopped
+    ports:
+      - '3040:3040'

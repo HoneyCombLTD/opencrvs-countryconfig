@@ -9,14 +9,14 @@
  * Copyright (C) The OpenCRVS Authors located at https://github.com/opencrvs/opencrvs-core/blob/master/AUTHORS.
  */
 window.config = {
-  AUTH_API_URL: 'http://localhost:4040/',
-  CONFIG_API_URL: 'http://localhost:2021',
+  AUTH_API_URL: 'http://192.168.0.50:4040/',
+  CONFIG_API_URL: 'http://192.168.0.50:2021',
   // Country code in uppercase ALPHA-3 format
   COUNTRY: 'FAR',
   LANGUAGES: 'en,fr',
   AVAILABLE_LANGUAGES_SELECT: 'en:English,fr:Français',
-  CLIENT_APP_URL: 'http://localhost:3000/',
-  COUNTRY_CONFIG_URL: 'http://localhost:3040',
+  CLIENT_APP_URL: 'http://192.168.0.50:3000/',
+  COUNTRY_CONFIG_URL: 'http://192.168.0.50:3040',
   SENTRY: '',
   LOGROCKET: ''
 }
