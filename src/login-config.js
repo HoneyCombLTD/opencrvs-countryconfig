@@ -9,6 +9,7 @@
  * Copyright (C) The OpenCRVS Authors located at https://github.com/opencrvs/opencrvs-core/blob/master/AUTHORS.
  */
 window.config = {
+  AUTH_URL: 'http://192.168.0.50:4040',
   AUTH_API_URL: 'http://192.168.0.50:4040/',
   CONFIG_API_URL: 'http://192.168.0.50:2021',
   // Country code in uppercase ALPHA-3 format

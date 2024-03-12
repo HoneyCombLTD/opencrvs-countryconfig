@@ -13,6 +13,7 @@ window.config = {
   CONFIG_API_URL: 'http://192.168.0.50:2021',
   LOGIN_URL: 'http://192.168.0.50:3020',
   AUTH_URL: 'http://192.168.0.50:4040',
+  AUTH_API_URL: 'http://192.168.0.50:4040/',
   MINIO_BUCKET: 'ocrvs',
   COUNTRY_CONFIG_URL: 'http://192.168.0.50:3040',
   // Country code in uppercase ALPHA-3 format
