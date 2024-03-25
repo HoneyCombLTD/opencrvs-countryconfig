@@ -11,7 +11,7 @@
 window.config = {
   API_GATEWAY_URL: 'http://192.168.0.50:7070/',
   CONFIG_API_URL: 'http://192.168.0.50:2021',
-  LOGIN_URL: 'http://192.168.0.50:3020',
+  LOGIN_URL: 'http://192.168.0.50:8000',
   AUTH_URL: 'http://192.168.0.50:4040',
   AUTH_API_URL: 'http://192.168.0.50:4040/',
   MINIO_BUCKET: 'ocrvs',

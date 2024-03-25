@@ -16,7 +16,7 @@ window.config = {
   COUNTRY: 'FAR',
   LANGUAGES: 'en,fr',
   AVAILABLE_LANGUAGES_SELECT: 'en:English,fr:Français',
-  CLIENT_APP_URL: 'http://192.168.0.50:3000/',
+  CLIENT_APP_URL: 'http://192.168.0.50:3001/',
   COUNTRY_CONFIG_URL: 'http://192.168.0.50:3040',
   SENTRY: '',
   LOGROCKET: ''
