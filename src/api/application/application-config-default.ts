@@ -1,7 +1,7 @@
 import { countryLogo } from '@countryconfig/api/application/country-logo'
 
 export const defaultApplicationConfig = {
-  APPLICATION_NAME: 'Farajaland CRS',
+  APPLICATION_NAME: 'TA CRS',
   BIRTH: {
     REGISTRATION_TARGET: 30,
     LATE_REGISTRATION_TARGET: 365,
