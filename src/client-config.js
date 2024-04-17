@@ -10,12 +10,12 @@
  */
 window.config = {
   API_GATEWAY_URL: 'http://192.168.0.50:7070/',
-  CONFIG_API_URL: 'http://192.168.0.50:2021',
-  LOGIN_URL: 'http://192.168.0.50:8000',
+  CONFIG_API_URL: 'https://config.opencrvs.techno-associates.live',
+  LOGIN_URL: 'https://login.opencrvs.techno-associates.live',
   AUTH_URL: 'http://192.168.0.50:4040',
   AUTH_API_URL: 'http://192.168.0.50:4040/',
   MINIO_BUCKET: 'ocrvs',
-  COUNTRY_CONFIG_URL: 'http://192.168.0.50:3040',
+  COUNTRY_CONFIG_URL: 'https://countryconfig.opencrvs.techno-associates.live',
   // Country code in uppercase ALPHA-3 format
   COUNTRY: 'FAR',
   AVAILABLE_LANGUAGES_SELECT: 'en:English,fr:Français',

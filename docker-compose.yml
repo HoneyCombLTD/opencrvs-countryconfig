@@ -19,3 +19,16 @@ services:
     environment:
       - AUTH_URL=http://192.168.0.50:4040
       - AUTH_API_URL='http://192.168.0.50:4040/'
+    networks:
+      - proxy_net
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=proxy_net
+      - traefik.http.routers.login.rule=Host(`countryconfig.opencrvs.techno-associates.live`)
+      - traefik.http.routers.login.entrypoints=websecure,web
+      - traefik.http.services.login.loadbalancer.server.port=3040
+      - traefik.http.routers.login.tls.certresolver=myresolver

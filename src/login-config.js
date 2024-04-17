@@ -11,13 +11,13 @@
 window.config = {
   AUTH_URL: 'http://192.168.0.50:4040',
   AUTH_API_URL: 'http://192.168.0.50:4040/',
-  CONFIG_API_URL: 'http://192.168.0.50:2021',
+  CONFIG_API_URL: 'https://config.opencrvs.techno-associates.live',
   // Country code in uppercase ALPHA-3 format
   COUNTRY: 'FAR',
   LANGUAGES: 'en,fr',
   AVAILABLE_LANGUAGES_SELECT: 'en:English,fr:Français',
-  CLIENT_APP_URL: 'http://192.168.0.50:3001/',
-  COUNTRY_CONFIG_URL: 'http://192.168.0.50:3040',
+  CLIENT_APP_URL: 'https://client.opencrvs.techno-associates.live/',
+  COUNTRY_CONFIG_URL: 'https://countryconfig.opencrvs.techno-associates.live',
   SENTRY: '',
   LOGROCKET: ''
 }
