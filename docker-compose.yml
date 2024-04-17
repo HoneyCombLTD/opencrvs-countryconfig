@@ -7,9 +7,11 @@
 #
 # Copyright (C) The OpenCRVS Authors located at https://github.com/opencrvs/opencrvs-core/blob/master/AUTHORS.
 version: "3.3"
+networks:
+  proxy_net:
+    external: true
 
 services:
-
   countryconfig:
     # image: ${DOCKERHUB_ACCOUNT}/${DOCKERHUB_REPO}:${COUNTRY_CONFIG_VERSION}
     build: .
