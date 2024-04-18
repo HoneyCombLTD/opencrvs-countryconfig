@@ -12,8 +12,8 @@ window.config = {
   API_GATEWAY_URL: 'http://192.168.0.50:7070/',
   CONFIG_API_URL: 'https://config.opencrvs.techno-associates.live',
   LOGIN_URL: 'https://login.opencrvs.techno-associates.live',
-  AUTH_URL: 'http://192.168.0.50:4040',
-  AUTH_API_URL: 'http://192.168.0.50:4040/',
+  AUTH_URL: 'https://auth.opencrvs.techno-associates.live',
+  AUTH_API_URL: 'https://auth.opencrvs.techno-associates.live/',
   MINIO_BUCKET: 'ocrvs',
   COUNTRY_CONFIG_URL: 'https://countryconfig.opencrvs.techno-associates.live',
   // Country code in uppercase ALPHA-3 format

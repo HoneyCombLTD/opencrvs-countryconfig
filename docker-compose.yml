@@ -19,8 +19,8 @@ services:
     ports:
       - '3040:3040'
     environment:
-      - AUTH_URL=http://192.168.0.50:4040
-      - AUTH_API_URL='http://192.168.0.50:4040/'
+      - AUTH_URL=https://auth.opencrvs.techno-associates.live
+      - AUTH_API_URL='https://auth.opencrvs.techno-associates.live/'
     networks:
       - proxy_net
     deploy:

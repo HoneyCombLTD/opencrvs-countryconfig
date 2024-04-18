@@ -9,8 +9,8 @@
  * Copyright (C) The OpenCRVS Authors located at https://github.com/opencrvs/opencrvs-core/blob/master/AUTHORS.
  */
 window.config = {
-  AUTH_URL: 'http://192.168.0.50:4040',
-  AUTH_API_URL: 'http://192.168.0.50:4040/',
+  AUTH_URL: 'https://auth.opencrvs.techno-associates.live',
+  AUTH_API_URL: 'https://auth.opencrvs.techno-associates.live/',
   CONFIG_API_URL: 'https://config.opencrvs.techno-associates.live',
   // Country code in uppercase ALPHA-3 format
   COUNTRY: 'FAR',
