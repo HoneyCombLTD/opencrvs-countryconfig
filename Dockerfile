@@ -17,4 +17,4 @@ EXPOSE 3040
 ADD start-prod.sh /usr/src/app
 RUN chmod +x ./start-prod.sh
 # CMD ["./start-prod.sh"]
-CMD yarn run start
+CMD yarn run dev
