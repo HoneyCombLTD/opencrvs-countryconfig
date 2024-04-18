@@ -9,12 +9,11 @@ COPY package.json package.json
 COPY tsconfig.json tsconfig.json
 COPY yarn.lock yarn.lock
 COPY src src
-# RUN yarn install --production
-RUN yarn install
+RUN yarn install --production
 
 EXPOSE 3040
 
 ADD start-prod.sh /usr/src/app
 RUN chmod +x ./start-prod.sh
 # CMD ["./start-prod.sh"]
-CMD yarn run dev
+CMD yarn run start:prod
