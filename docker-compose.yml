@@ -26,11 +26,11 @@ services:
       - APPLICATION_CONFIG_URL=http://config:2021
       - OPENHIM_URL=http://openhim-core:5001/fhir
       - CONFIRM_REGISTRATION_URL=http://openhim-core:5001/confirm/registration
-      - SENDER_EMAIL_ADDRESS=noreply@techno-associates.live
-      - ALERT_EMAIL=noreply@techno-associates.live
+      - SENDER_EMAIL_ADDRESS=noreply@techno-associates.com
+      - ALERT_EMAIL=noreply@techno-associates.com
       - SMTP_HOST=smtp.gmail.com
       - SMTP_PORT=587
-      - SMTP_USERNAME=noreply@techno-associates.live
+      - SMTP_USERNAME=noreply@techno-associates.com
       - SMTP_PASSWORD=Techn0l0gy@123
       - SMTP_SECURE=true
     networks:
