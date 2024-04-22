@@ -9,7 +9,7 @@
  * Copyright (C) The OpenCRVS Authors located at https://github.com/opencrvs/opencrvs-core/blob/master/AUTHORS.
  */
 window.config = {
-  API_GATEWAY_URL: 'http://192.168.0.50:7070/',
+  API_GATEWAY_URL: 'https://gateway.opencrvs.techno-associates.live/',
   CONFIG_API_URL: 'https://config.opencrvs.techno-associates.live',
   LOGIN_URL: 'https://login.opencrvs.techno-associates.live',
   AUTH_URL: 'https://auth.opencrvs.techno-associates.live',
