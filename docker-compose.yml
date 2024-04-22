@@ -33,6 +33,7 @@ services:
       - SMTP_USERNAME=noreply@techno-associates.com
       - SMTP_PASSWORD=Techn0l0gy@123
       - SMTP_SECURE=true
+      - NOTIFICATION_TRANSPORT=email
     networks:
       - proxy_net
     deploy:
